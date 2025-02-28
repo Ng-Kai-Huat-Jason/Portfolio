@@ -1,4 +1,3 @@
-// About.jsx
 import React, { useState } from "react";
 import Carousel from "./Carousel";
 
@@ -17,16 +16,16 @@ const About = () => {
       image: profileImage,
       imageAlt: "Jason",
       content:
-        "Hi, I'm Jason, a learning student who is passionate about coding and has a keen interest in UI/UX. This portfolio is built using React and Tailwind CSS.",
+        "Hi, I'm Jason, a person who's interested in learning programming, UI/UX development as well as Software Engineering.",
     },
     {
       id: 2,
       title: "My Hobbies",
-      image: hobbyImage, 
+      image: hobbyImage,
       imageAlt: "Jason's hobbies",
       content:
-        "In my free time, I enjoy exploring new technologies, playing video games, and designing user interfaces. I also love outdoor activities like hiking and photography.",
-    },  
+        "In my free time, I enjoy playing video games, watching anime and reading manga. I also enjoy playing rhythm games such as MaiMai and Project Diva.",
+    },
   ];
 
   // Transform the data into proper slide format
@@ -44,19 +43,19 @@ const About = () => {
 
         {/* Content on the Right */}
         <div className="w-full md:w-1/2 md:pl-8">
-          <h3 className="text-2xl font-bold text-dark mb-4">
+          <h3 className="text-2xl font-bold text-primary mb-4">
             {slide.title}
           </h3>
-          <p className="text-dark">{slide.content}</p>
+          <p className="text-black">{slide.content}</p>
         </div>
       </div>
     ),
   }));
 
   return (
-    <section id="about" className="py-20 bg-vintage-cream">
+    <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-12">
-        <h2 className="text-3xl font-bold text-center text-vintage-blue mb-12">
+        <h2 className="text-3xl font-bold text-center text-black mb-12">
           Some Information About Me
         </h2>
 

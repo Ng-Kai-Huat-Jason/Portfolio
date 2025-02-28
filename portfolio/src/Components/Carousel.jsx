@@ -1,4 +1,3 @@
-// Carousel.jsx
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -51,17 +50,18 @@ const Carousel = ({ slides, onSlideChange }) => {
         .custom-arrow {
           width: 40px;
           height: 40px;
+          border-radius: 1px;
           z-index: 1;
         }
 
         .custom-arrow:before {
           font-size: 30px;
-          color: #f3701e; /* Vintage orange color */
+          color: #9357e5; /* Accent color */
           opacity: 0.8;
         }
 
         .custom-arrow:hover:before {
-          color: #f3701e;
+          color: #9357e5;
           opacity: 1;
         }
 
@@ -90,12 +90,12 @@ const Carousel = ({ slides, onSlideChange }) => {
 
         .custom-dots li button:before {
           font-size: 12px;
-          color: #4b607f; /* Vintage blue color */
+          color: #7638cb; /* Primary color */
           opacity: 0.5;
         }
 
         .custom-dots li.slick-active button:before {
-          color: #f3701e; /* Vintage orange color */
+          color: #9357e5; /* Accent color */
           opacity: 1;
           font-size: 15px; /* Make active dot slightly larger */
           transition: all 0.3s;

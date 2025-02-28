@@ -30,14 +30,14 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-dark">
+    <section id="projects" className="py-20 bg-primary">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-vintage-cream">Projects</h2>
+        <h2 className="text-3xl font-bold text-center text-background">Projects</h2>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-vintage-cream p-6 rounded-lg shadow-lg hover:shadow-xl cursor-pointer transition-shadow duration-300 flex flex-col"
+              className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl cursor-pointer transition-shadow duration-300 flex flex-col"
             >
               {/* Project Image */}
               <div className="flex justify-center">
@@ -50,14 +50,14 @@ const Projects = () => {
 
               {/* Project Details */}
               <div className="mt-6 flex-1 flex flex-col">
-                <h3 className="text-xl font-bold text-vintage-blue">{project.title}</h3>
-                <p className="mt-2 text-vintage-blue flex-1">
+                <h3 className="text-xl font-bold text-primary">{project.title}</h3>
+                <p className="mt-2 text-black flex-1">
                   {project.description}
                 </p>
                 <div className="mt-4">
                   <a
                     href={project.githubLink}
-                    className="text-vintage-orange hover:underline"
+                    className="text-accent hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -66,7 +66,7 @@ const Projects = () => {
                   {project.demoLink && (
                     <a
                       href={project.demoLink}
-                      className="ml-4 text-vintage-orange hover:underline"
+                      className="ml-4 text-accent hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
