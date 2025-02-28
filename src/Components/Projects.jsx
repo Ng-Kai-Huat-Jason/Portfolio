@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import BannerBiteLogo from "../images/BannerBites.png"; // Import the image
 import GenshinImpactLogo from "../images/GenshinImpact.png"; // Import the image
 import Error404 from "../images/Error404.png"; // Import the placeholder image
+import Popup from "./Popup"; // Import the Popup component
 
 const Projects = () => {
+  const [showPopup, setShowPopup] = useState(false); // State to control popup visibility
+
   const projects = [
     {
       title: "BannerBites",
@@ -11,7 +14,7 @@ const Projects = () => {
       description:
         "BannerBites is a web application for managing advertisements dynamically with real-time updates.",
       githubLink: "https://github.com/Koyonari/BannerBites_FSDIT03",
-      demoLink: "#",
+      demoLink: "https://youtu.be/pAA6HHHId9w",
     },
     {
       title: "GenshinPromo",
@@ -19,15 +22,24 @@ const Projects = () => {
       description: "Front-end web application for a Genshin Impact fan site.",
       githubLink:
         "https://github.com/Ng-Kai-Huat-Jason/FED_GenshinPromo_website",
-      demoLink: "#",
+      demoLink: "#", // No demo available
     },
     {
       title: "Dummy Project",
       description: "Dummy project description",
       githubLink: "https://roblox.com/",
-      demoLink: "#",
+      demoLink: "#", // No demo available
     },
   ];
+
+  // Function to handle demo link click
+  const handleDemoClick = (demoLink) => {
+    if (demoLink === "#") {
+      setShowPopup(true); // Show popup if no demo is available
+    } else {
+      window.open(demoLink, "_blank"); // Open demo link in a new tab
+    }
+  };
 
   return (
     <section id="projects" className="py-20 bg-primary">
@@ -63,22 +75,26 @@ const Projects = () => {
                   >
                     GitHub
                   </a>
-                  {project.demoLink && (
-                    <a
-                      href={project.demoLink}
-                      className="ml-4 text-accent hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Demo
-                    </a>
-                  )}
+                  <button
+                    onClick={() => handleDemoClick(project.demoLink)}
+                    className="ml-4 text-accent hover:underline"
+                  >
+                    Demo
+                  </button>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Popup for no demo available */}
+      {showPopup && (
+        <Popup
+          message="No Demo Available"
+          onClose={() => setShowPopup(false)}
+        />
+      )}
     </section>
   );
 };

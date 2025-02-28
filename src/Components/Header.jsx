@@ -18,7 +18,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       {/* Name above navbar */}
       <div className="w-full text-center py-10 pb-5">
-        <h1 className="font-roboto font-bold text-4xl">Ng Kai Huat Jason</h1>
+        <h1 className="font-roboto pl-5 font-bold text-4xl">Ng Kai Huat Jason</h1>
       </div>
 
       {/* Navigation bar */}
