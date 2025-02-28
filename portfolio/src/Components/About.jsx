@@ -1,3 +1,4 @@
+// About.jsx
 import React, { useState } from "react";
 import Carousel from "./Carousel";
 
@@ -24,7 +25,7 @@ const About = () => {
       image: hobbyImage,
       imageAlt: "Jason's hobbies",
       content:
-        "In my free time, I enjoy playing video games, watching anime and reading manga. I also enjoy playing rhythm games such as MaiMai and Project Diva.",
+        "In my free time, I enjoy playing video games, watching anime and reading manga. I also enjoy playing rhythm games such as MaiMai and Project Sekai.",
     },
   ];
 
@@ -43,19 +44,19 @@ const About = () => {
 
         {/* Content on the Right */}
         <div className="w-full md:w-1/2 md:pl-8">
-          <h3 className="text-2xl font-bold text-primary mb-4">
+          <h3 className="text-2xl font-bold text-secondary mb-4">
             {slide.title}
           </h3>
-          <p className="text-black">{slide.content}</p>
+          <p className="text-black text-xl">{slide.content}</p>
         </div>
       </div>
     ),
   }));
 
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-20 bg-background pt-48">
       <div className="container mx-auto px-12">
-        <h2 className="text-3xl font-bold text-center text-black mb-12">
+        <h2 className="text-3xl font-bold text-center text-primary mb-12">
           Some Information About Me
         </h2>
 
