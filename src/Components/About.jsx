@@ -56,9 +56,6 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-background pt-48">
       <div className="container mx-auto px-12">
-        <h2 className="text-3xl font-bold text-center text-primary mb-12">
-          Some Information About Me
-        </h2>
 
         {/* Dynamic carousel with mapped content */}
         <Carousel
