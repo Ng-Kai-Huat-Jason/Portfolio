@@ -32,7 +32,7 @@ const Header = () => {
                 smooth={true}
                 offset={-100} // Increased offset to account for taller header
                 duration={500}
-                className={`font-roboto text-lg hover:text-purple-600 transition-colors duration-300 ${
+                className={`font-roboto text-lg hover:text-purple-600 cursor-pointer transition-colors duration-300 ${
                   activeSection === item.id
                     ? "text-purple-600"
                     : "text-gray-700"

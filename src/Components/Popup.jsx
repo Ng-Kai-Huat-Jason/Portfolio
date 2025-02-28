@@ -28,7 +28,7 @@ const Popup = ({ message, onClose }) => {
     >
       {/* Popup content with transition */}
       <div
-        className={`bg-background p-6 rounded-lg shadow-lg text-center transition-opacity duration-300 ${
+        className={`bg-background p-6 pb-2 rounded-lg shadow-lg text-center transition-opacity duration-300 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
