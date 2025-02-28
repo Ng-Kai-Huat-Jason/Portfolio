@@ -10,6 +10,8 @@ import githubLogo from "../images/githubLogo.svg";
 import nodejsLogo from "../images/nodejsLogo.svg";
 import javascriptLogo from "../images/javascriptLogo.svg";
 
+import { ArrowDownFromLine, ArrowUpFromLine } from "lucide-react"; // Import Lucide icons
+
 const Skills = () => {
   // Define a skills object that categorizes different skills
   const skills = {
@@ -91,12 +93,18 @@ const Skills = () => {
             </div>
           )}
           {/* Button to toggle between expanded and collapsed view */}
-          <button
-            className="mt-6 px-6 py-2 bg-secondary text-background rounded-lg shadow-md hover:bg-opacity-80 transition-colors duration-300"
-            onClick={() => setExpanded(!expanded)}
-          >
-            {expanded ? "Show Less" : "Expand"}
-          </button>
+          <div className="flex justify-center mt-6"> {/* Center the button */}
+            <button
+              className="px-6 py-2 bg-secondary text-background rounded-lg shadow-md hover:bg-opacity-80 transition-colors duration-300 flex items-center justify-center"
+              onClick={() => setExpanded(!expanded)}
+            >
+              {expanded ? (
+                <ArrowUpFromLine className="w-5 h-5" /> // Icon for expanded state
+              ) : (
+                <ArrowDownFromLine className="w-5 h-5" /> // Icon for collapsed state
+              )}
+            </button>
+          </div>
         </div>
       </div>
     </section>

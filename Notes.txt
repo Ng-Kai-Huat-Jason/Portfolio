@@ -1,0 +1,7 @@
+Uses
+React
+TailWind CSS
+CSS
+React-Slick
+React-Scroll
+React-Bootstrap
