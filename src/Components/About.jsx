@@ -44,10 +44,10 @@ const About = () => {
 
         {/* Content on the Right */}
         <div className="w-full md:w-1/2 md:pl-8">
-          <h3 className="text-2xl font-bold text-secondary mb-4">
+          <h3 className="text-3xl font-extrabold text-secondary mb-4">
             {slide.title}
           </h3>
-          <p className="text-black text-xl">{slide.content}</p>
+          <p className="text-black text-base">{slide.content}</p>
         </div>
       </div>
     ),
