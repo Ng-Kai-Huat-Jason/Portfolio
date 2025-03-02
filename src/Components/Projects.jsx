@@ -5,6 +5,7 @@ import Error404 from "../images/Error404.png"; // Import the placeholder image
 import Popup from "./Popup"; // Import the Popup component
 import SkillForgeLogo from "../images/skillforgeLogo.png"; // Import the image
 import PocketPlanLogo from "../images/pocketplanLogo.png"; // Import the image
+import nutriaidLogo from "../images/nutriaidLogo.png"; // Import the image
 
 const Projects = () => {
   const [showPopup, setShowPopup] = useState(false); // State to control popup visibility
@@ -14,7 +15,7 @@ const Projects = () => {
       title: "BannerBites",
       image: BannerBiteLogo,
       description:
-        "BannerBites is a web application for managing advertisements dynamically with real-time updates.",
+        "BannerBites is a web application for managing advertisements dynamically with real-time updates. The project utilizes a React.js frontend, a Node.js backend, and AWS DynamoDB/S3 Bucket for data storage with WebSocket support.",
       githubLink: "https://github.com/Koyonari/BannerBites_FSDIT03",
       demoLink: "https://youtu.be/pAA6HHHId9w",
       type: "github",
@@ -22,11 +23,21 @@ const Projects = () => {
     {
       title: "GenshinPromo",
       image: GenshinImpactLogo,
-      description: "Front-end web application for a Genshin Impact fan site.",
+      description:
+        'GenshinPromo is a collaborative work between MiHoYo and our company to promote official "Genshin Impact" branded merchandise as well as the "Genshin Impact" videogame to potential returning players and new players.',
       githubLink:
         "https://github.com/Ng-Kai-Huat-Jason/FED_GenshinPromo_website",
       demoLink:
         "https://drive.google.com/file/d/1wCEsWRCG7IbrVyfCfRt2HEUQlJSkP1z4/view?usp=sharing",
+      type: "github",
+    },
+    {
+      title: "NutriAid",
+      image: nutriaidLogo,
+      description:
+        "NutriAid is a web application designed to bridge the gap between underprivileged individuals and volunteers willing to provide food aid.",
+      githubLink: "https://github.com/Koyonari/BED2024Apr_P03_T05",
+      demoLink: "https://www.youtube.com/watch?v=RLlnlZ1mpVU",
       type: "github",
     },
     {
