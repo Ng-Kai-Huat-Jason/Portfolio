@@ -3,6 +3,7 @@ import BannerBiteLogo from "../images/BannerBites.png"; // Import the image
 import GenshinImpactLogo from "../images/GenshinImpact.png"; // Import the image
 import Error404 from "../images/Error404.png"; // Import the placeholder image
 import Popup from "./Popup"; // Import the Popup component
+import SkillForgeLogo from "../images/skillforgeLogo.png"; // Import the image
 
 const Projects = () => {
   const [showPopup, setShowPopup] = useState(false); // State to control popup visibility
@@ -28,6 +29,13 @@ const Projects = () => {
       title: "Dummy Project",
       description: "Dummy project description",
       githubLink: "https://roblox.com/",
+      demoLink: "#", // No demo available
+    },
+    {
+      title: "SkillForge",
+      image: "SkillForgeLogo",
+      description: "killForge aims to combat the issue of underemployment in Singapore directly, by empowering users to seek out learning opportunities, certficiations and job vacancies based on their newly acquired or enhanced digital skills.",
+      githubLink: "https://www.figma.com/design/sg3rw7WfjFikKCQphJtYsr/DUX_Assignment-1_Ng-Kai-Huat-Jason?node-id=0-1&t=70Bswq0PybaS3KGk-1",
       demoLink: "#", // No demo available
     },
   ];
